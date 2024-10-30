@@ -4,6 +4,10 @@
     --neuVeryPaleBlue: hsl(225, 100%, 98%);
     --neuDesaturatedBlue: hsl(224, 23%, 55%);
     --neuDarkBlue: hsl(223, 47%, 23%);
+
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 *, *::after, *::before{
@@ -25,7 +29,7 @@ body {
 
 main {
     background-color: white;
-    width: 90%;
+    width: 87%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -46,15 +50,18 @@ main {
     width: 75%;
 }
 
+
 .orderSummary h1 {
     margin: 1rem;
+    font-weight: 900;
 }
 
 .orderSummary p { 
-    margin: 1rem;
     line-height: 1.5;
     color: var(--neuDesaturatedBlue);
     font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .planPrice {
@@ -65,10 +72,19 @@ main {
     width: 85%;
     padding: 0.75rem 1rem;
     margin: 0.5rem 0rem 1rem;
+    border-radius: 0.75rem;
 }
 
 .planDetails h3 {
     margin: 0.125rem 0rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.planDetails p {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .processOrder {
@@ -82,6 +98,8 @@ main {
 
 .processOrder button{
     width: 85%;
+    font-size: 0.9rem;
+    font-weight: 700;
     height: 2.625rem;
     border-radius: 0.5rem;
     background-color: var(--priBrightblue);
@@ -94,10 +112,20 @@ main {
     text-decoration: none;
     color: var(--neuDesaturatedBlue);
     margin: 1rem;
+    font-weight: 900;
 }
 
+.planPrice p {
+    color: var(--neuDesaturatedBlue);
+}
 
-
+.planPrice a {
+    font-weight: 700;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.8rem;
+}
 
 
 
