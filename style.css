@@ -25,10 +25,13 @@ body {
     align-items: center;
     position: relative;
     background-color: var(--priPaleblue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
 }
 
 main {
     background-color: white;
+    max-width: 400px;
     width: 87%;
     height: fit-content;
     display: flex;
@@ -83,7 +86,7 @@ main {
 
 .planDetails p {
     font-size: 0.9rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
     font-weight: 700;
 }
 
@@ -108,11 +111,21 @@ main {
     box-shadow: 0rem 0.7rem 0.7rem rgba(231, 228, 255, 0.855);
 }
 
+.processOrder button:hover {
+    cursor: pointer;
+    background-color: hsl(245, 79%, 59%);
+}
+
 .processOrder a {
     text-decoration: none;
     color: var(--neuDesaturatedBlue);
     margin: 1rem;
     font-weight: 900;
+}
+
+.processOrder a:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .planPrice p {
@@ -125,10 +138,13 @@ main {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
-
-
+.planPrice a:hover{
+    cursor: pointer;
+    color: hsl(245, 68%, 55%);
+}
 
 footer { 
     font-size: 11px; text-align: center; 
@@ -139,3 +155,10 @@ footer {
 footer a { 
     color: hsl(228, 45%, 44%);
  }
+
+@media screen and (min-width: 375px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+}
